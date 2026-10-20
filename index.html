@@ -1,152 +1,72 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>YamajiLearn | Training materials, digital resources, and learning apps</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M3 5L20 3L40 4L61 3L60 22L62 42L60 61L40 60L20 62L3 60L4 40L2 20Z' fill='%23c8352b'/%3E%3Cpath d='M17 50V30M32 50V14M47 50V30M13 50h38' stroke='%23f6f0e4' stroke-width='7' fill='none'/%3E%3C/svg%3E">
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Turino Training | Fast, effective digital training</title>
+<meta name="description" content="Turino Training builds training materials, digital resources and apps that get teams ready faster and performing better.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
 <style>
-:root{--charcoal:#2b2b2b;--ink:#05162e;--cream:#f6f0e4;--paper:#fcfaf5;--red:#c8352b;--blue:#0072f6;--gold:#f3bb00;--muted:#53647d;--line:#e3d9c6;
---head:"Montserrat","Outfit","Space Grotesk","Segoe UI",Arial,sans-serif;--body:"Inter","Segoe UI",Roboto,Arial,sans-serif}
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:var(--body);color:var(--charcoal);background:var(--paper);line-height:1.6}
-a{color:inherit;text-decoration:none}.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
-h1,h2,h3{font-family:var(--head);color:var(--charcoal);line-height:1.12;letter-spacing:-.01em}
-h1{font-size:clamp(34px,4.2vw,54px);font-weight:800}h2{font-size:clamp(28px,3.6vw,44px);font-weight:800}h3{font-size:20px;font-weight:700}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font:700 13px var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:16px}
-.eyebrow svg{width:22px;height:22px}
-.lead{font-size:19px;color:var(--muted);max-width:620px;margin-top:18px}
-.btn{display:inline-flex;align-items:center;gap:8px;font:700 15px var(--head);padding:14px 22px;border-radius:6px;border:2px solid var(--charcoal);transition:.15s}
-.btn.primary{background:var(--red);border-color:var(--red);color:#fff}.btn.primary:hover{background:#a92a21}
-.btn.ghost:hover{background:var(--charcoal);color:var(--cream)}
-.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
-/* brand */
-.brand{display:flex;align-items:center;gap:12px}.word{font:800 26px var(--head);letter-spacing:.06em;color:var(--charcoal)}
-.seal{width:38px;height:38px;flex:none}
-/* nav */
-header{position:sticky;top:0;z-index:5;background:rgba(252,250,245,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-.topbar{background:var(--charcoal);color:var(--cream);font-size:13px;text-align:center;padding:7px 12px}
-nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
-.links{display:flex;gap:26px;font-weight:600;font-size:15px}.links a:hover{color:var(--red)}
-.navcta{padding:10px 16px;font-size:14px}
-/* hero */
-.hero{padding:84px 0 70px;background:var(--cream);position:relative;overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
-.heroart{position:relative;aspect-ratio:1;max-width:440px;justify-self:end;width:100%}
-.heroart .wc{width:100%;height:100%;color:var(--charcoal)}
-.heroart .stamp{position:absolute;right:-6px;bottom:18px;width:110px;height:110px;transform:rotate(-6deg);filter:drop-shadow(0 8px 14px rgba(0,0,0,.2))}
-/* divider */
-.divider{display:flex;align-items:center;gap:18px;max-width:1180px;margin:0 auto;padding:0 28px;color:var(--charcoal)}
-.divider:before,.divider:after{content:"";flex:1;height:0;border-top:2px dashed var(--line)}.divider svg{width:44px;height:44px}
-section{padding:84px 0}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
-.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:28px}
-.card p{color:var(--muted);margin-top:8px}
-.ico{width:58px;height:58px;border-radius:8px;background:var(--cream);display:grid;place-items:center;margin-bottom:18px;color:var(--charcoal)}
-.ico svg{width:40px;height:40px}.ico.red{background:var(--red);color:var(--cream)}.ico.blue{background:var(--blue);color:#fff}
-.center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
-.band{background:var(--charcoal);color:var(--cream);text-align:center;padding:26px 0;font:700 18px var(--head)}
-.band span{color:var(--gold)}
-.inds{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
-.ind{background:var(--ink);color:#fff;border-radius:10px;padding:34px 28px;display:flex;justify-content:space-between;align-items:flex-end;min-height:170px;position:relative;overflow:hidden}
-.ind h3{color:#fff}.ind .bg{position:absolute;right:-20px;top:-20px;width:150px;opacity:.16;color:#fff}
-.ind:nth-child(2){background:var(--red)}.ind:nth-child(3){background:var(--charcoal)}
-.lib{background:var(--cream)}
-.libs{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
-.libs h3{display:flex;justify-content:space-between;border-bottom:2px solid var(--charcoal);padding-bottom:12px;margin-bottom:8px}
-.libs h3 small{color:var(--red);font-size:16px}
-.libs li{list-style:none;padding:11px 0;border-bottom:1px solid var(--line);display:flex;gap:14px}
-.libs li b{color:var(--red);font-family:var(--head);min-width:24px}
-.ai{margin-top:26px;background:#fff;border:2px dashed var(--red);border-radius:10px;padding:24px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.ai p{color:var(--muted)}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px;counter-reset:s}
-.step{border-top:4px solid var(--charcoal);padding-top:20px}
-.step .num{font:800 46px var(--head);color:var(--red);display:flex;align-items:center;gap:12px}.step .num svg{width:34px;height:34px;color:var(--charcoal)}
-.step p{color:var(--muted);margin-top:8px}
-.prices{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
-.price{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px;display:flex;flex-direction:column}
-.price.hot{border:2px solid var(--red);position:relative}
-.price .amt{font:800 30px var(--head);margin:10px 0 2px}.price .sub{color:var(--muted);font-size:14px}
-.price ul{list-style:none;margin:18px 0 22px;flex:1}.price li{padding:6px 0;font-size:15px;display:flex;gap:8px}.price li:before{content:"✓";color:var(--red);font-weight:800}
-.price .btn{justify-content:center}.tag{font-size:13px;color:var(--muted)}
-.note{text-align:center;color:var(--muted);margin-top:24px}
-.teams{background:var(--ink);color:#e9f5ff}.teams h2,.teams h3{color:#fff}.teams .lead{color:#b9c6d8}
-.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:40px}
-.grid4 .n{font:800 15px var(--head);color:var(--gold);letter-spacing:.1em}.grid4 p{color:#b9c6d8;margin-top:6px}
-.grid4>div{border-left:2px solid rgba(255,255,255,.2);padding-left:18px}
-.about .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}
-.about .art{background:var(--cream);border-radius:12px;padding:40px;display:grid;place-items:center}.about .art img{max-width:100%;mix-blend-mode:multiply}
-form{background:#fff;border:1px solid var(--line);border-radius:12px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px}
-label{font-size:14px;font-weight:600;display:flex;flex-direction:column;gap:6px}input,textarea{font:inherit;padding:12px;border:1px solid var(--line);border-radius:6px;background:var(--paper)}
-label.full{grid-column:1/-1}textarea{min-height:110px}
-.contact .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:50px}
-.final{background:var(--red);color:#fff;text-align:center}.final h2{color:#fff}.final .lead{color:#fde3df;margin:16px auto 0}
-.final .btn{background:var(--cream);border-color:var(--cream);color:var(--charcoal)}.final .wcbig{width:80px;color:var(--cream);margin-bottom:14px}
-footer{background:var(--charcoal);color:#cfc8ba;padding:60px 0 30px;font-size:15px}
-footer .cols{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px}footer h4{color:#fff;font:700 14px var(--head);letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
-footer a{display:block;padding:3px 0}footer a:hover{color:#fff}footer .word{color:var(--cream)}
-footer .legal{border-top:1px solid #444;margin-top:40px;padding-top:20px;display:flex;justify-content:space-between;align-items:center;font-size:13px;flex-wrap:wrap;gap:10px}
-footer .legal svg{width:30px;height:30px;color:var(--cream)}
-@media(max-width:900px){.links{display:none}.hero .wrap,.about .wrap,.contact .wrap{grid-template-columns:1fr}.heroart{justify-self:center;max-width:300px}
-.grid3,.inds,.steps,.libs{grid-template-columns:1fr}.prices,.grid4{grid-template-columns:1fr 1fr}footer .cols{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.wrap{padding:0 20px}section{padding:60px 0}.hero{padding:56px 0}.prices,.grid4,form{grid-template-columns:1fr}.word{font-size:22px}.navcta{display:none}
-footer .cols{grid-template-columns:1fr}.heroart .stamp{width:80px;height:80px}.ai{flex-direction:column;align-items:flex-start}}
-.eyebrow svg,.divider svg,.step .num svg,.legal svg,.heroart .wc{color:var(--red);--cut:var(--paper)}
-.ico svg{color:var(--charcoal);--cut:var(--cream)}.ico.red svg{color:var(--cream);--cut:var(--red)}.ico.blue svg{color:#fff;--cut:var(--blue)}
-.ind .bg{color:#fff;--cut:var(--ink);right:22px!important;top:22px!important;width:64px!important;height:64px;opacity:.5!important}.ind:nth-child(2) .bg{--cut:var(--red)}.ind:nth-child(3) .bg{--cut:var(--charcoal)}.teams .eyebrow svg{color:var(--cream)!important;--cut:var(--ink)}.final .wcbig{color:var(--cream);--cut:var(--red)}
-footer .legal svg{color:var(--cream);--cut:var(--charcoal)}.heroart .stamp{color:var(--charcoal)}
-.prods{display:grid;grid-template-columns:2fr 1fr;gap:22px;margin-top:40px}.ind p{color:#c9d3e2;margin-top:6px}
-.prods .ind{background:var(--ink)!important;min-height:200px}.prods .soon{background:var(--charcoal)!important}.prods .soon .bg{--cut:var(--charcoal)}
-.meaning{display:flex;align-items:center;gap:12px;margin-top:30px;color:var(--muted)}.meaning svg{width:30px;height:30px;color:var(--red);--cut:var(--paper)}
-.people{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:36px;max-width:760px}.person{display:flex;gap:18px;align-items:center}.person .ico{margin:0}
-.person p{color:var(--red);font-weight:600;margin-top:2px}.person:hover{border-color:var(--red)}
-.fcols{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}.fmail{display:flex;gap:26px;flex-wrap:wrap}
-@media(max-width:700px){.prods,.people{grid-template-columns:1fr}.hero h1{font-size:34px}}
-.word em{font-style:normal;color:var(--red)}footer .word em{color:#e2564b}
+:root{--ink:#121417;--carbon:#1C1F24;--steel:#8A939E;--line:#2C3138;--red:#E10600;--orange:#FF6A13;--white:#F5F6F7}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--ink);color:var(--white);line-height:1.6}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(18,20,23,.95);z-index:5}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:40px;height:40px}
+.word{font-weight:900;font-style:italic;font-size:1.35rem;letter-spacing:.02em;text-transform:uppercase}
+.word span{color:var(--red)}
+nav a{margin-left:22px;text-decoration:none;color:var(--steel);font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--white)}
+.hero{position:relative;overflow:hidden;padding:110px 0 90px}
+.hero:before{content:"";position:absolute;right:-120px;top:0;bottom:0;width:520px;background:repeating-linear-gradient(110deg,transparent 0 40px,rgba(225,6,0,.9) 40px 58px,transparent 58px 80px,rgba(255,106,19,.7) 80px 88px,transparent 88px 140px);transform:skewX(-20deg);opacity:.85}
+.hero .wrap{position:relative}
+.kicker{color:var(--orange);font-weight:800;letter-spacing:.18em;text-transform:uppercase;font-size:.8rem}
+h1{font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.02;font-weight:900;font-style:italic;text-transform:uppercase;max-width:760px;margin:14px 0 22px}
+h1 em{color:var(--red)}
+.sub{font-size:1.2rem;color:#C9CED4;max-width:620px}
+.btns{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;font-weight:800;text-decoration:none;text-transform:uppercase;letter-spacing:.06em;font-size:.9rem;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)}
+.btn.p{background:var(--red)}.btn.p:hover{background:var(--orange)}
+.btn.s{background:var(--white);color:var(--ink)}
+.stripe{height:8px;background:linear-gradient(90deg,var(--red) 0 60%,var(--orange) 60% 80%,var(--white) 80%)}
+section{padding:80px 0}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);font-style:italic;font-weight:900;text-transform:uppercase;margin-bottom:12px}
+.lead{color:var(--steel);max-width:640px;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--carbon);border:1px solid var(--line);border-top:4px solid var(--red);padding:28px}
+.card h3{font-size:1.2rem;margin-bottom:8px}
+.card p{color:#B8BEC6}
+.num{font-size:2.6rem;font-weight:900;font-style:italic;color:var(--orange);line-height:1}
+.alt{background:var(--carbon)}
+.alt .card{background:var(--ink)}
+.prod{display:grid;grid-template-columns:2fr 1fr;gap:20px}
+.prod .card a{color:var(--orange);font-weight:800;text-decoration:none}
+.soon{border-top-color:var(--steel);display:flex;flex-direction:column;justify-content:center}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact a{color:var(--orange);font-weight:700;word-break:break-all}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--steel);font-size:.9rem}
+@media(max-width:820px){.grid,.prod,.contact{grid-template-columns:1fr}nav a:not(:last-child){display:none}.hero{padding:70px 0 60px}.hero:before{opacity:.25}}
 </style></head><body>
-<!-- Woodcut 山 symbol: solid carved block with gouge marks -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><rect width="7" height="7" fill="currentColor"/><path d="M0 3.5h7" stroke="var(--paper,#fcfaf5)" stroke-width="1.6"/></pattern>
-<symbol id="wc" viewBox="0 0 100 100">
-<path d="M6 8 L22 5 L41 7 L60 4 L78 6 L95 5 L94 22 L96 41 L93 60 L95 79 L94 95 L76 93 L57 96 L38 94 L20 96 L5 94 L7 76 L4 57 L6 38 L4 20Z" fill="currentColor"/>
-<path d="M13 14 L33 12.5 L55 14 L87 12.5 L87.5 33 L86 58 L87.5 87 L60 86 L35 87.5 L12.5 86.5 L14 60 L12 36Z" fill="none" stroke="var(--cut,#fcfaf5)" stroke-width="2.6" stroke-linejoin="bevel"/>
-<g stroke="var(--cut,#fcfaf5)" stroke-width="1.3" stroke-linecap="round" opacity=".4"><path d="M18 26 l8 -8 M20 40 l10 -10 M60 22 l7 -6 M66 30 l12 -12 M18 70 l6 -6 M70 76 l10 -10 M62 50 l14 -14 M19 55 l9 -9"/></g>
-<g fill="var(--cut,#fcfaf5)"><path d="M42 76 L41.5 22 L50 16 L58.5 21.5 L58 76Z"/><path d="M19 76 L18.5 40 L26 35 L33 39.5 L32.5 76Z"/><path d="M67.5 76 L67 39.5 L74 35 L81.5 40 L81 76Z"/><path d="M16 68 Q50 66 84 68 L84.5 82 Q50 80 15.5 82.5Z"/></g>
-</symbol>
-<symbol id="sealsym" viewBox="0 0 100 100"><use href="#wc" style="color:#c8352b;--cut:#f6f0e4"/></symbol><symbol id="old" viewBox="0 0 100 100"><rect x="3" y="3" width="94" height="94" rx="6" fill="#c8352b"/><rect x="9" y="9" width="82" height="82" rx="3" fill="none" stroke="#f6f0e4" stroke-width="3"/>
-<path d="M24 76 V40 M50 76 V20 M76 76 V40 M24 76 H76" stroke="#f6f0e4" stroke-width="9" stroke-linecap="square" fill="none"/></symbol>
-</defs></svg>
-
-<header><div class="wrap"><nav>
-<a class="brand" href="#"><svg class="seal"><use href="#sealsym"/></svg><span class="word">YAMAJI<em>LEARN</em></span></a>
-<div class="links"><a href="#what">What we do</a><a href="#products">Products</a><a href="#contact">Contact</a></div>
-<a class="btn primary navcta" href="#contact">Get in touch</a></nav></div></header>
-
-<section class="hero"><div class="wrap"><div>
-<div class="eyebrow"><svg><use href="#wc"/></svg>YamajiLearn</div>
-<h1>We develop training materials, digital resources, and apps that turn practice into performance.</h1>
-<p class="lead">Learning that sticks, built for the work people actually do.</p>
-<div class="btns"><a class="btn primary" href="#contact">Get in touch</a><a class="btn ghost" href="#products">See our work</a></div></div>
-<div class="heroart"><svg class="wc"><use href="#wc"/></svg><svg class="stamp"><use href="#wc" style="--cut:#f6f0e4"/></svg></div></div></section>
-
-<section id="what"><div class="wrap"><div class="eyebrow"><svg><use href="#wc"/></svg>What we do</div><h2>Practical tools for learning on the job.</h2>
-<div class="grid3">
-<div class="card"><div class="ico red"><svg><use href="#wc"/></svg></div><h3>Training materials</h3><p>Guides, workbooks, and frameworks that help teams build skills step by step.</p></div>
-<div class="card"><div class="ico"><svg><use href="#wc"/></svg></div><h3>Digital resources</h3><p>Templates, videos, and online content people can use whenever they need it.</p></div>
-<div class="card"><div class="ico blue"><svg><use href="#wc"/></svg></div><h3>Learning apps</h3><p>Simple apps that let people practice and get feedback.</p></div>
-</div></div></section>
-
-<div class="divider"><svg><use href="#wc"/></svg></div>
-
-<section id="products"><div class="wrap"><div class="eyebrow"><svg><use href="#wc"/></svg>Our products</div><h2>Our work</h2>
-<div class="prods">
-<a class="ind" href="#"><svg class="bg"><use href="#wc"/></svg><div><h3>The Calls App</h3><p>Realistic voice practice for everyday conversations.</p></div><span>↗</span></a>
-<div class="ind soon"><svg class="bg"><use href="#wc"/></svg><div><h3>More coming soon</h3><p>New tools are on the way.</p></div></div>
-</div>
-<p class="meaning"><svg><use href="#wc"/></svg><span><b>Yamaji (山路)</b> means "mountain trail" in Japanese.</span></p></div></section>
-
-<section id="contact" class="lib"><div class="wrap"><div class="eyebrow"><svg><use href="#wc"/></svg>Contact</div><h2>Get in touch.</h2>
-<div class="people">
-<a class="card person" href="mailto:nathan@yamajilearn.com"><div class="ico red"><svg><use href="#wc"/></svg></div><div><h3>Nathan</h3><p>nathan@yamajilearn.com</p></div></a>
-<a class="card person" href="mailto:rick@yamajilearn.com"><div class="ico"><svg><use href="#wc"/></svg></div><div><h3>Rick</h3><p>rick@yamajilearn.com</p></div></a>
-</div></div></section>
-
-<footer><div class="wrap"><div class="fcols"><div class="brand"><svg class="seal"><use href="#sealsym"/></svg><span class="word">YAMAJI<em>LEARN</em></span></div>
-<div class="fmail"><a href="mailto:nathan@yamajilearn.com">nathan@yamajilearn.com</a><a href="mailto:rick@yamajilearn.com">rick@yamajilearn.com</a></div></div>
-<div class="legal"><span>© 2026 YamajiLearn</span><svg><use href="#wc"/></svg></div></div></footer>
+<header><div class="wrap nav"><a class="brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Turino Training logo"><rect width="64" height="64" rx="12" fill="#121417"/><path d="M14 18h40l-4 8H38L30 48h-9l8-22H10z" fill="#E10600"/><path d="M8 34h14l-2 4H6zM4 42h14l-2 4H2z" fill="#F5F6F7"/><g fill="#F5F6F7"><rect x="44" y="40" width="5" height="5"/><rect x="49" y="45" width="5" height="5"/><rect x="44" y="50" width="5" height="5"/><rect x="54" y="40" width="5" height="5"/><rect x="54" y="50" width="5" height="5"/></g></svg><span class="word">Turino<span>/</span>Training</span></a>
+<nav><a href="#why">Why us</a><a href="#build">What we build</a><a href="#products">Products</a><a href="#contact">Contact</a></nav></div></header>
+<div class="hero"><div class="wrap"><p class="kicker">Digital training, built for speed</p>
+<h1>Ready faster. <em>Perform better.</em></h1>
+<p class="sub">We build training materials, digital resources and apps that get your team up to speed in days, not months, and keep them sharp once they are there.</p>
+<div class="btns"><a class="btn p" href="#contact">Start a project</a><a class="btn s" href="https://thecallsapp.com">Try The Calls App</a></div></div></div>
+<div class="stripe"></div>
+<section id="why"><div class="wrap"><h2>Speed that sticks</h2><p class="lead">Fast training only matters if it works. Everything we make is short, focused and built around the moments your people actually face.</p>
+<div class="grid"><div class="card"><div class="num">01</div><h3>Built fast</h3><p>We move from idea to working training quickly, so your team is not waiting on a long project to start improving.</p></div>
+<div class="card"><div class="num">02</div><h3>Learned fast</h3><p>Short lessons and real practice beat long courses. People get to the skill that matters and use it right away.</p></div>
+<div class="card"><div class="num">03</div><h3>Proven results</h3><p>Managers can see progress, not just completions, so you know the training is paying off.</p></div></div></div></section>
+<section id="build" class="alt"><div class="wrap"><h2>What we build</h2><p class="lead">Practical training tools for client facing teams.</p>
+<div class="grid"><div class="card"><h3>Training materials</h3><p>Clear guides, playbooks and scripts your team will actually use on the job.</p></div>
+<div class="card"><h3>Digital resources</h3><p>Quick reference tools and on demand lessons that fit into a busy day.</p></div>
+<div class="card"><h3>Training apps</h3><p>Interactive apps that let people practice, get feedback and improve on their own time.</p></div></div></div></section>
+<section id="products"><div class="wrap"><h2>Products</h2><p class="lead">Our apps put practice in your team's pocket.</p>
+<div class="prod"><div class="card"><h3>The Calls App</h3><p>Practice real conversations with AI voice agents that react to how you sound, adjusting their emotional response to your tone. Managers track progress across the team. Perfect for anyone who talks to customers.</p><p style="margin-top:14px"><a href="https://thecallsapp.com">thecallsapp.com &rarr;</a></p></div>
+<div class="card soon"><h3>More coming soon</h3><p>New apps are on the way.</p></div></div></div></section>
+<section id="contact" class="alt"><div class="wrap"><h2>Let's get moving</h2><p class="lead">Tell us what your team needs to get better at. We will show you how fast we can get them there.</p>
+<div class="contact"><div class="card"><h3>Nathan</h3><a href="mailto:nathan@turinotraining.com">nathan@turinotraining.com</a></div>
+<div class="card"><h3>Rick</h3><a href="mailto:rick@turinotraining.com">rick@turinotraining.com</a></div></div></div></section>
+<footer><div class="wrap">&copy; 2026 Turino Training. Fast, effective digital training.</div></footer>
 </body></html>
